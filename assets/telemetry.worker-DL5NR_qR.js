@@ -1,0 +1,1 @@
+function e(e){return new Worker(`/syncops/assets/telemetry.worker-DwAt2ITH.js`,{name:e?.name})}export{e as default};
