@@ -1,77 +1,24 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# SyncOps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Async Engineering Control Suite for distributed software development teams.
 
-Currently, two official plugins are available:
+A frontend architecture demonstration built with React 19, TypeScript, and Vite. Showcases three independent engineering modules: a visual QA workbench for design drift detection against Figma overlays, a Web Worker performance profiler benchmarking main-thread isolation, and a cross-border timezone orchestrator for global team synchronization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- React 19
+- TypeScript (strict mode)
+- Vite
+- Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Modules
 
-## Expanding the ESLint configuration
+1. **Design Drift & Visual QA Workbench** — Figma overlay alignment with fine-tune drift controls.
+2. **Web Worker Data Stream & Performance Profiler** — Benchmarks frame velocity under high-frequency array workloads.
+3. **Cross-Border Timezone Overlap Orchestrator** — Maps real-time availability windows across EST, BST, WAT, and IST.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Run locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# syncops
->>>>>>> b4ae6e44cc10ba885c3cd466ee3390ceda9462ab
+```bash
+npm install
+npm run dev
